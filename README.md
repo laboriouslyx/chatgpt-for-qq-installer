@@ -1,6 +1,6 @@
 # chatgpt-for-qq-installer
 
-为lss233/chatgpt-mirai-qq-bot准备的自动安装包
+为[lss233/chatgpt-mirai-qq-bot](https://github.com/lss233/chatgpt-mirai-qq-bot)准备的自动安装包
 
 使用OneBot
 
