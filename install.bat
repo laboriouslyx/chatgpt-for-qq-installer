@@ -1,13 +1,13 @@
 @echo off
 title Chatgpt for QQ by lss233 installer by lyx
 cd /d %~dp0
-git -v >nul 2>nul || (echo gitÎ´°²×°£¡ÇëÏÈ°²×°git & echo git-scm.com & pause & exit)
+git -v >nul 2>nul || (echo gitæœªå®‰è£…ï¼è¯·å…ˆå®‰è£…git & echo git-scm.com & pause & exit)
 mkdir OneBot
 copy .\files\OneBot\*.* .\OneBot\
 cd OneBot
-echo ½ÓÏÂÀ´½«»á´ò¿ª config.yml£¬ÇëÐÞ¸ÄÀïÃæµÄQQÕËºÅ£¬ÃÜÂëÁô¿Õ¡£(Ç§Íò²»ÒªÌî£¡£¡£¡)
+echo æŽ¥ä¸‹æ¥å°†ä¼šæ‰“å¼€ config.ymlï¼Œè¯·ä¿®æ”¹é‡Œé¢çš„QQè´¦å·ï¼Œå¯†ç ç•™ç©ºã€‚(åƒä¸‡ä¸è¦å¡«ï¼ï¼ï¼)
 notepad config.yml
-echo ÔËÐÐÒ»´Î¡¾Æô¶¯OneBot.cmd¡¿ºó´ò¿ªdevice.json£¬½«"protocol":6¸ÄÎª"protocol":2
+echo è¿è¡Œä¸€æ¬¡ã€å¯åŠ¨OneBot.cmdã€‘åŽæ‰“å¼€device.jsonï¼Œå°†"protocol":6æ”¹ä¸º"protocol":2
 pause
 cd ..
 
@@ -20,13 +20,12 @@ set path=%cd%;%path%
 python get-pip.py >nul 2>nul
 cd ..
 python -m pip install -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://pypi.org/simple/ -r requirements.txt
-ECHO ½ÓÏÂÀ´½«»á´ò¿ª config.cfg£¬ÇëÐÞ¸ÄÀïÃæµÄÐÅÏ¢¡£
-COPY config.example.cfg config.cfg
+ECHO æŽ¥ä¸‹æ¥å°†ä¼šæ‰“å¼€ config.cfgï¼Œè¯·ä¿®æ”¹é‡Œé¢çš„ä¿¡æ¯ã€‚
 notepad config.cfg
 cd ..
 cls
 copy .\files\scripts\*.* . >nul 2>nul
-ECHO "½ÓÏÂÀ´ÇëÏÈÖ´ÐÐ ¡¾Æô¶¯ChatGPT.cmd¡¿£¬Æô¶¯³ÌÐò¡£"
-ECHO "È»ºóÖ´ÐÐ ¡¾Æô¶¯OneBot.cmd¡¿ ²¢µÇÂ¼»úÆ÷ÈË QQ£¬È»ºó¾Í¿ÉÒÔ¿ªÊ¼Ê¹ÓÃÁË£¡"
+ECHO "æŽ¥ä¸‹æ¥è¯·å…ˆæ‰§è¡Œ ã€å¯åŠ¨ChatGPT.cmdã€‘ï¼Œå¯åŠ¨ç¨‹åºã€‚"
+ECHO "ç„¶åŽæ‰§è¡Œ ã€å¯åŠ¨OneBot.cmdã€‘ å¹¶ç™»å½•æœºå™¨äºº QQï¼Œç„¶åŽå°±å¯ä»¥å¼€å§‹ä½¿ç”¨äº†ï¼"
 pause
 exit
